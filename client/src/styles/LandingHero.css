@@ -1,0 +1,40 @@
+.landingHeroContainer {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 75px 20px;
+}
+.landingHeroContainer > h1 {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+.landingHeroContainer > h3 {
+    font-size: 26px;
+    color: white;
+    margin: 16px 0;
+
+}
+.landingHeroContainer > p {
+    font-size: 19.2px;
+    color: white;
+    margin: 0;
+
+}
+.landingHeroInputContainer {
+    margin-top: 40px;
+    width: 100%;
+}
+.landingHeroInputContainer > input {
+    padding: 20px 40px;
+    width: 60%;
+    border: none;
+    
+}
+.landingHeroInputContainer > button {
+    padding: 20px;
+    background-color: rgb(243, 57, 57);
+    color: white;
+    font-weight: 400;
+    border: none;
+}

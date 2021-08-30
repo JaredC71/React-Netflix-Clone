@@ -1,0 +1,19 @@
+.landingJumbotronContainer {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/4d2d33bb-c8d0-4c01-abaa-6aaa031a943e/US-en-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+
+
+}
+.landingJumbotronContainer::before {
+    background-color: rgba(51, 51, 51, 0.911);
+    height: 50px;
+}
+.landingJumbotronContainer::after {
+    background-color: rgba(51, 51, 51, 0.842);
+}
+
+
+.overlay {
+    background-color: rgba(51, 51, 51, 0.637);
+ 
+  
+}
