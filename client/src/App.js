@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import { useStateValue } from "./StateProvider";
+import React, { useState } from "react";
+import "./styles/App.css";
+
+import Landing from "./Pages/Landing";
+import Login from "./Pages/Login";
+import Signup from "./Pages/Signup";
+import Browse from "./Pages/Browse";
 
 function App() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!user ? (
+        <>
+        <Landing />
+        </>
+      ) : (
+        <div className="App_Body">
+         
+          <Browse />
+        </div>
+      )}
     </div>
   );
 }
